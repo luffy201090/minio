@@ -45,7 +45,8 @@ fullnameOverride: ""
 commonLabels: {}
 ## @param commonAnnotations Annotations to add to all deployed objects
 ##
-commonAnnotations: {}
+commonAnnotations:
+  avp.kubernetes.io/path: "kv/cubbyhole/minio"
 ## @param kubeVersion Force target Kubernetes version (using Helm capabilities if not set)
 ##
 kubeVersion: ""
@@ -112,7 +113,7 @@ auth:
   rootUser: admin
   ## @param auth.rootPassword Password for MinIO&reg; root user
   ##
-  rootPassword: "123456"
+  rootPassword: <admin.password>
   ## @param auth.existingSecret Use existing secret for credentials details (`auth.rootUser` and `auth.rootPassword` will be ignored and picked up from this secret).
   ##
   existingSecret: ""
