@@ -46,7 +46,7 @@ commonLabels: {}
 ## @param commonAnnotations Annotations to add to all deployed objects
 ##
 commonAnnotations:
-  avp.kubernetes.io/path: "kv/cubbyhole/minio"
+  avp.kubernetes.io/path: "cubbyhole/minio"
 ## @param kubeVersion Force target Kubernetes version (using Helm capabilities if not set)
 ##
 kubeVersion: ""
