@@ -30,7 +30,7 @@ keywords:
 maintainers:
 - name: Broadcom, Inc. All Rights Reserved.
   url: https://github.com/bitnami/charts
-name: minio
+name: minio2
 sources:
 - https://github.com/bitnami/charts/tree/main/bitnami/minio
 version: 14.6.25
